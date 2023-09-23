@@ -1,0 +1,56 @@
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+.h-custom {
+    height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+    height: 100%;
+}
+}
+
+/* animation */
+.pos{
+    
+    animation: colorchange infinite 11s linear;
+    animation-direction: alternate-reverse;
+}
+
+
+/* to prevent scrolling */
+body{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+
+/* for rounded input borders */
+.rounded-border{
+    border-radius: 33px;
+}
+
+/* animation effect */
+@keyframes colorchange {
+    
+      0% {
+        background: #ff0000;
+      }
+
+      25% {
+        background: #F44336;
+      }
+      50% {
+        background: #2196F3;
+      }
+      75% {
+        background: #FFC107;
+      }
+      100% {
+        background: #4CAF50;
+      }
+  }

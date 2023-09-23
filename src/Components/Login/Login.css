@@ -14,62 +14,29 @@
 }
 }
 
-
+/* animation */
 .pos{
-    animation: colorchange 11s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    position: absolute;
-    width: 758px;
-    height: 835px;
-    left: -141px;
-    top: 70px;
-    overflow:hidden;
+    
+    animation: colorchange infinite 11s linear;
+    animation-direction: alternate-reverse;
 }
 
-.pos-img{
-    position: absolute;
-    width: 634px;
-    height: 557px;
-    left: 120px;
-    top: 120px;
-}
 
+/* to prevent scrolling */
 body{
     height: 100%;
     overflow-y: hidden;
 }
 
+
+/* for rounded input borders */
 .rounded-border{
     border-radius: 33px;
 }
 
+/* animation effect */
 @keyframes colorchange {
-    /* 0% {
-        background: #ff0000;
-      }
-      14% {
-        background: #ffa500;
-      }
-      28% {
-        background: #ffff00;
-      }
-      42% {
-        background: #008000;
-      }
-      56% {
-        background: #0000ff;
-      }
-      70% {
-        background: #4b0082;
-      }
-      84% {
-        background: #ee82ee;
-      }
-      100% {
-        background: #ff0000;
-      } */
+    
       0% {
         background: #ff0000;
       }

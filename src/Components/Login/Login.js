@@ -6,17 +6,19 @@ function Login() {
     <div>
       <section className="vh-100">
 
-      {/* image  */}
-        <div className="rounded-circle pos">
-          <img src="./Image.svg" className="img-fluid pos-img " alt="test" />
-        </div>
+   
+        
       {/* container  */}
         <div className="container-fluid h-custom">
         {/* container 1st */}
           <div className="row d-flex justify-content-center align-items-center h-100">
-            <div className="col-md-9 col-lg-6 col-xl-5">
-
-            </div>
+          <div class="col-md-9 col-lg-6 col-xl-5">
+             {/* image  */}
+          <div className="pos position-relative rounded-circle"> {/* comment it to remove circle */}
+            <img src="./Image.svg"
+              className="img-fluid position-relative position-start-10" alt="test" />
+          </div>
+          </div>
 
           {/* container 2 */}
           <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">

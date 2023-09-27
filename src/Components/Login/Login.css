@@ -16,31 +16,15 @@
 
 /* animation */
 .pos{
-    
     animation: colorchange infinite 11s linear;
     animation-direction: alternate-reverse;
 }
 
-
-/* to prevent scrolling */
-body{
-    height: 100%;
-    overflow-y: hidden;
-}
-
-
-/* for rounded input borders */
-.rounded-border{
-    border-radius: 33px;
-}
-
 /* animation effect */
 @keyframes colorchange {
-    
       0% {
-        background: #ff0000;
+        background: #F44336;
       }
-
       25% {
         background: #F44336;
       }
@@ -53,4 +37,11 @@ body{
       100% {
         background: #4CAF50;
       }
+  }
+
+  /* border custom in password field */
+  .border-custom{
+    border-right: none;
+    border-radius: 33px 0px 0px 33px;
+    border-color: black;
   }

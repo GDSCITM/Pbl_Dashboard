@@ -5,11 +5,42 @@ import { useState, useEffect } from "react";
 
 function Login() {
 
+  // taken from previous project (
+  const [Data, setData] = useState(null);
+
+  useEffect(() => {
+    // Replace 'API_ENDPOINT' with your actual API endpoint
+    const apiUrl = 'API_ENDPOINT';
+
+    // Using Axios (if installed)
+    // axios.get(apiUrl)
+    //   .then(response => {
+    //     setData(response.data);
+    //   })
+    //   .catch(error => {
+    //     console.error('Error fetching data:', error);
+    //   });
+
+    // Using the Fetch API
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(Data => {
+        setData(Data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+  
+// )
+
+
+  // another way of writing api logic ,depends on the api end point ,on how it works
   const createUser = async() => {
     // write the api logic 
-
-
   } 
+
+
 
 
   // setmail use state  {
